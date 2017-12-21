@@ -1,0 +1,303 @@
+form, fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+	outline: none;
+}
+
+em, i {
+	font-style: normal;
+}
+
+img {
+	border-style: none;
+	vertical-align: top;
+}
+
+main {
+	display: block;
+}
+
+mark {
+	background: none;
+}
+
+textarea {
+	overflow: auto;
+}
+
+input {
+	vertical-align: middle;
+	font: 100% arial, helvetica, sans-serif;
+	outline: none;
+	color: #000;
+	resize: none;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+select {
+	vertical-align: middle;
+	font: 100% arial, helvetica, sans-serif;
+	outline: none;
+	color: #000;
+	resize: none;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+textarea {
+	vertical-align: middle;
+	font: 100% arial, helvetica, sans-serif;
+	outline: none;
+	color: #000;
+	resize: none;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p {margin: 0;}
+
+a {
+	color: #f00;
+	text-decoration: none;
+}
+
+a:hover {text-decoration: none;}
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+input[type="number"] {
+	-moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+input::-webkit-search-cancel-button {display: none;}
+input::-webkit-input-placeholder {
+	opacity: 1; 
+	transition: opacity 0.4s ease;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	-ms-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+}
+
+input::-moz-placeholder {
+	opacity: 1; 
+	transition: opacity 0.4s ease;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	-ms-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+}
+
+input:-moz-placeholder {
+	opacity: 1; 
+	transition: opacity 0.4s ease;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	-ms-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+}
+
+input:-ms-input-placeholder {
+	opacity: 1; 
+	transition: opacity 0.4s ease;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	-ms-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+}
+
+textarea::-webkit-input-placeholder {
+	opacity: 1;
+	transition: opacity 0.4s ease;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	-ms-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+}
+
+textarea::-moz-placeholder {
+	opacity: 1;
+	transition: opacity 0.4s ease;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	-ms-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+}
+
+textarea:-moz-placeholder {
+	opacity: 1;
+	transition: opacity 0.4s ease;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	-ms-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+	opacity: 0; 
+	transition: opacity 0.4s ease;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	-ms-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+}
+
+input:focus::-moz-placeholder {
+	opacity: 0; 
+	transition: opacity 0.4s ease;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	-ms-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+}
+
+input:focus:-moz-placeholder {
+	opacity: 0; 
+	transition: opacity 0.4s ease;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	-ms-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+}
+
+input:focus:-ms-input-placeholder {
+	opacity: 0; 
+	transition: opacity 0.4s ease;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	-ms-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+}
+
+textarea:focus::-webkit-input-placeholder {
+	opacity: 0; 
+	transition: opacity 0.4s ease;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	-ms-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+}
+
+textarea:focus::-moz-placeholder {
+	opacity: 0; 
+	transition: opacity 0.4s ease;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	-ms-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+}
+
+textarea:focus:-moz-placeholder {
+	opacity: 0; 
+	transition: opacity 0.4s ease;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	-ms-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+}
+
+textarea:focus:-ms-input-placeholder {
+	opacity: 0; 
+	transition: opacity 0.4s ease;
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	-ms-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+}
+
+input::-webkit-input-placeholder {
+	color: #666;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 300;
+}
+
+input::-ms-input-placeholder {
+	color: #666;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 300;
+}
+
+textarea::-webkit-input-placeholder {
+	color: #666;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 300;
+}
+
+textarea::-moz-placeholder {
+	color: #666;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 300;
+}
+
+textarea:-moz-placeholder {
+	color: #666;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 300;
+}
+
+textarea::-ms-placeholder {
+	color: #666;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 300;
+}
+
+.margin_res {
+	margin: 0 !important;
+}
+
+.padding_res {
+	padding: 0 !important;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.alignleft {
+	text-align: left;
+}
+
+.alignright {
+	text-align: right;
+}
+
+.aligncenter {
+	text-align: center;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}

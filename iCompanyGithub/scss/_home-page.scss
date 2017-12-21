@@ -1,0 +1,565 @@
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+
+  .header-image {
+    flex-basis: 50%;
+
+    @media (max-width: 1250px) {
+      flex-basis: 30%;
+    }
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .header-content {
+    flex-basis: 50%;
+    padding: 0 15px 0 40px;
+
+    @media (max-width: 1250px) {
+      flex-basis: 70%;
+    }
+
+    @media (max-width: 1024px) {
+      flex-basis: 100%;
+      padding: 0;
+    }
+
+    .main-header {
+      .logo-wrap {
+        margin-bottom: 50px;
+
+        a {
+          display: block;
+        }
+
+        @media (max-width: $screen-md-max) {
+          margin-bottom: 20px;
+          text-align: center;
+        }
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .main-nav {
+        margin-bottom: 60px;
+
+        @media (max-width: $screen-sm-max) {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+
+        a {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 24px;
+          line-height: 26px;
+          font-weight: 600;
+          color: $main-color;
+          text-transform: uppercase;
+          margin-right: 25px;
+          position: relative;
+
+          @media (max-width: $screen-sm-max) {
+            font-size: 18px;
+            line-height: 20px;
+            margin: 0 4px;
+          }
+
+          &:hover, &.select {
+            &:after {
+              width: 100%;
+            }
+          }
+
+          &:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: $main-color;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            @include transition;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .main-info-wrapper {
+      padding: 90px 90px 90px 0;
+      position: relative;
+
+      @media (max-width: $screen-md-max) {
+        padding: 90px 0;
+      }
+
+      @media (max-width: $screen-sm-max) {
+        padding: 50px 0;
+      }
+
+      .border-block {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 960px;
+        height: 100%;
+        background: transparent;
+        border: 33px solid rgba(255, 224, 178, .33);
+
+        @media (max-width: 1440px) {
+          width: 860px;
+        }
+
+        @media (max-width: 1024px) {
+          width: 85%;
+          z-index: -1;
+        }
+
+        img {
+          position: absolute;
+          top: -240px;
+          right: -140px;
+          max-width: 310px;
+
+          @media (max-width: 1440px) {
+            top: -140px;
+            right: -55px;
+            max-width: 200px;
+          }
+
+          @media (max-width: $screen-lg-max) {
+            right: 0;
+          }
+
+          @media (max-width: $screen-md-max) {
+            top: -100px;
+          }
+
+          @media (max-width: $screen-sm-max) {
+            display: none;
+          }
+        }
+      }
+
+      p {
+        font-size: 24px;
+        line-height: 30px;
+        color: #000;
+        margin-bottom: 30px;
+        text-align: justify;
+        text-indent: 35px;
+
+        @media (max-width: $screen-sm-max) {
+          font-size: 18px;
+          line-height: 26px;
+          text-indent: 15px;
+        }
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+        
+        mark {
+          display: inline-block;
+          margin-bottom: 0;
+          font-weight: 700;
+          color: $main-color;
+        }
+      }
+
+      mark {
+        display: block;
+        padding: 0;
+        background: none;
+        font-size: 24px;
+        line-height: 26px;
+        font-weight: 700;
+        color: $main-color;
+        margin-bottom: 30px;
+
+        @media (max-width: $screen-sm-max) {
+          font-size: 18px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.why-we-img {
+  @media (max-width: $screen-md-max) {
+    display: none;
+  }
+}
+
+.tasks-whywe {
+  width: 100%;
+  margin-bottom: 90px;
+  position: relative;
+}
+
+.tasks-wrapper {
+  position: relative;
+  padding-top: 100px;
+
+  @media (max-width: 1024px) {
+    padding-top: 50px;
+  }
+
+  [class*="col-"] {
+    @media (max-width: $screen-sm-max) {
+      padding: 0;
+    }
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    width: 430px;
+    height: 430px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background: url(../images/tasks-before-img.png) no-repeat 0 0;
+    background-size: contain;
+    z-index: -1;
+
+    @media (max-width: 1280px) {
+      display: none;
+    }
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../images/tasks-after-img.png) no-repeat 100% 0;
+    background-size: contain;
+    z-index: -1;
+
+    @media (max-width: 1280px) {
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+.tasks-list-wrapper {
+  background-color: #fff;
+  box-shadow: 0 20px 80px -15px #abdcd8;
+  padding: 50px 40px;
+  margin-bottom: 70px;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    padding: 30px 15px;
+  }
+}
+
+.list-wrapper {
+  li {
+    position: relative;
+    padding-left: 30px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000;
+    margin-bottom: 30px;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: $main-color;
+      position: absolute;
+      top: 9px;
+      left: 0;
+    }
+  }
+}
+
+.holder-whywe {
+  position: relative;
+  margin: 0 auto 70px auto;
+  padding-top: 70px;
+
+  @media (max-width: 1024px) {
+    padding-top: 0;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -300px;
+    right: 0;
+    width: 100%;
+    height: 700px;
+    background: transparent;
+    border: 33px solid rgba(255, 224, 178, .33);
+    z-index: -1;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+}
+
+.img-container {
+  padding: 0 15px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.services-wrapper {
+  padding: 70px 15px 0 15px;
+
+  h2 {
+    margin-bottom: 55px;
+  }
+}
+
+.services-table {
+  border: 3px solid $main-color;
+  margin-bottom: 60px;
+
+  .services-table-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+    border-bottom: 3px solid $main-color;
+
+    @media (max-width: $screen-lg-max) {
+      padding: 25px 0;
+    }
+
+    @media (max-width: $screen-md-max) {
+      display: block;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 30px;
+      color: #000;
+      text-align: justify;
+
+      @media (max-width: $screen-sm-max) {
+        font-size: 18px;
+        line-height: 26px;
+      }
+
+      mark {
+        font-size: 36px;
+        line-height: 20px;
+        font-weight: 700;
+        color: $main-color;
+        padding: 0;
+        background: none;
+        margin-right: 10px;
+
+        @media (max-width: $screen-sm-max) {
+          font-size: 30px;
+          line-height: 32px;
+        }
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .services-table-col {
+      flex-basis: 48%;
+
+      @media (max-width: $screen-md-max) {
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.news-wrapper {
+  margin-bottom: 90px;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 30px;
+  }
+
+  .row {
+    @media (max-width: $screen-lg-max) {
+      margin: 0;
+      padding: 0 15px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      padding: 0;
+
+      [class*="col-"] {
+        padding: 0;
+      }
+    }
+  }
+
+  .news-block {
+    display: flex;
+    flex-flow: row wrap;
+    text-decoration: underline;
+    color: #000;
+    padding-right: 20px;
+    margin-bottom: 20px;
+
+    @media (max-width: 1280px) {
+      padding-right: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    .news-img {
+      width: 150px;
+      margin-right: 15px;
+
+      @media (max-width: $screen-sm-max) {
+        width: 100px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .news-title {
+      width: calc(100% - 165px);
+
+      @media (max-width: $screen-sm-max) {
+        width: calc(100% - 115px);
+      }
+
+      p {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0;
+
+        @media (max-width: 1280px) {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+
+.main-footer {
+  h2 {
+    margin-bottom: 70px;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 80px;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: $screen-lg-max) {
+      display: block;
+    }
+
+    .footer-col {
+      margin: 0 100px;
+      text-align: center;
+
+      @media (max-width: $screen-lg-max) {
+        margin: 0 0 30px 0;
+      }
+
+      svg {
+        display: block;
+        margin-bottom: 10px;
+        fill: $main-color;
+      }
+
+      a {
+        display: block;
+        font-size: 24px;
+        line-height: 26px;
+        color: #000;
+        text-decoration: underline;
+
+        @media (max-width: $screen-sm-max) {
+          font-size: 18px;
+          line-height: 20px;
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      span {
+        display: block;
+        font-size: 24px;
+        line-height: 26px;
+        color: #000;
+        margin-top: 5px;
+
+        @media (max-width: $screen-sm-max) {
+          font-size: 18px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
