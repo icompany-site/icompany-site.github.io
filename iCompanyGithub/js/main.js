@@ -34,6 +34,6 @@ $(document).ready(function(){
     }
 
     if ($(window).width() < 750) {
-        $('section, div, footer').removeAttr('data-aos');
+        $('section, div, footer, .article-row').removeAttr('data-aos');
     }
 });
